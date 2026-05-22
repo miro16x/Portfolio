@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+dist/
+
+amirs-portfolio/node_modules/
+amirs-portfolio/dist/
