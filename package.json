@@ -1,0 +1,9 @@
+{
+  "name": "skill-setup",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix amirs-portfolio run dev",
+    "build": "npm --prefix amirs-portfolio install && npm --prefix amirs-portfolio run build",
+    "preview": "npm --prefix amirs-portfolio run preview"
+  }
+}
