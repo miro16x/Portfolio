@@ -53,7 +53,7 @@ export default function Projects() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
                 >
-                  {cat === 'all' ? 'All Projects' : cat === 'fullstack' ? 'Full-Stack' : cat === 'frontend' ? 'Frontend' : 'Web3'}
+                  {cat === 'all' ? 'All Projects' : cat === 'app' ? 'Apps' : 'Websites'}
                 </motion.button>
               ))}
             </div>
@@ -91,7 +91,7 @@ function ProjectCard({ project }) {
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative text-center">
           <div className="text-5xl mb-2 opacity-60">
-            {project.category === 'frontend' ? '🎨' : project.category === 'web3' ? '⛓️' : '⚙️'}
+            {project.category === 'app' ? '⚡' : '🌐'}
           </div>
           <span className="font-code text-xs text-white/60 uppercase tracking-widest">
             {project.category}

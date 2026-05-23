@@ -60,12 +60,13 @@ export default function Resume() {
               >
                 A
               </div>
-              <h3 className="font-heading font-bold text-2xl text-gray-900 dark:text-white mb-1">Amir</h3>
-              <p className="text-primary font-code">Full-Stack Developer & Designer</p>
+              <h3 className="font-heading font-bold text-2xl text-gray-900 dark:text-white mb-1">Amir Salem</h3>
+              <p className="text-primary font-code">CS Student & Web Developer | Erie, PA</p>
               <div className="flex flex-wrap justify-center gap-4 mt-3 text-muted text-sm">
-                <span>amirsslem679@gmail.com</span>
-                <span>github.com/amir</span>
-                <span>linkedin.com/in/amir</span>
+                <span>salem009@gannon.edu</span>
+                <a href="https://github.com/miro16x" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">github.com/miro16x</a>
+                <a href="https://www.linkedin.com/in/amir-salem-b91365381" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">linkedin.com/in/amir-salem</a>
+                <a href="https://app.joinhandshake.com/profiles/a5grz3" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Handshake Profile</a>
               </div>
             </div>
 
@@ -76,10 +77,7 @@ export default function Resume() {
                 Summary
               </h4>
               <p className="text-slate-600 dark:text-muted leading-relaxed">
-                Full-stack developer with 5+ years of experience building scalable web applications.
-                Specializes in React, Node.js, and cloud architecture. Proven track record delivering
-                high-impact products that serve 50,000+ users with 99.9% uptime. Passionate about
-                clean code, performance optimization, and mentoring.
+                Driven Computer Science student at Gannon University with experience in communications, sales management, customer service, and digital content creation. Strong background in leadership, client relations, and team collaboration, with technical skills in Java, C++, HTML/CSS, website design, and web management. Recognized for strong communication, problem-solving abilities, and the ability to adapt and perform in fast-paced environments.
               </p>
             </div>
 
@@ -126,7 +124,7 @@ export default function Resume() {
             <div>
               <h4 className="font-heading font-bold text-gray-900 dark:text-white text-lg mb-5 flex items-center gap-2">
                 <span className="w-6 h-[2px] bg-accent" />
-                Core Technologies
+                Skills
               </h4>
               <div className="flex flex-wrap gap-2">
                 {skillCategories.flatMap(cat => cat.skills).map(skill => (

@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiMapPin, FiSend } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiSend } from 'react-icons/fi'
+import { FaHandshake } from 'react-icons/fa'
 
 const contactInfo = [
-  { icon: FiMail, label: 'Email', value: 'amirsslem679@gmail.com', href: 'mailto:amirsslem679@gmail.com' },
-  { icon: FiMapPin, label: 'Location', value: 'Remote / Worldwide', href: null },
+  { icon: FiMail, label: 'Email', value: 'salem009@gannon.edu', href: 'mailto:salem009@gannon.edu' },
+  { icon: FiMapPin, label: 'Location', value: 'Erie, PA', href: null },
 ]
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FiGithub, href: 'https://github.com/miro16x', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/amir-salem-b91365381', label: 'LinkedIn' },
+  { icon: FaHandshake, href: 'https://app.joinhandshake.com/profiles/a5grz3', label: 'Handshake' },
 ]
 
 const containerVariants = {

@@ -38,12 +38,11 @@ export default function About() {
           {/* Bio */}
           <motion.div variants={itemVariants} className="glass-card p-8 mb-16 max-w-3xl mx-auto text-center">
             <p className="text-slate-600 dark:text-muted text-lg leading-relaxed mb-4">
-              I'm a passionate <span className="text-primary font-semibold">Full-Stack Developer</span> with 5+ years of experience building scalable web applications and digital products.
-              I bridge the gap between elegant design and robust engineering.
+              I'm a driven <span className="text-primary font-semibold">Computer Science student</span> at Gannon University with a strong background in web development, sales management, and digital content creation.
+              I thrive at the intersection of technology, leadership, and communication.
             </p>
             <p className="text-slate-600 dark:text-muted leading-relaxed">
-              When I'm not coding, I'm contributing to open source, mentoring junior developers, or exploring the latest advancements in web technologies.
-              I believe great software is built at the intersection of craft, empathy, and relentless attention to detail.
+              Outside of class, I work as a Communications Assistant at Erie's Black Wall Street NP, managing social media and community outreach. I've also led sales teams at Luxe Fragrances and Urban Luxe, building long-term client relationships and driving growth through strong communication and mentorship.
             </p>
           </motion.div>
 
@@ -131,10 +130,10 @@ export default function About() {
                   <h4 className="font-heading font-semibold text-gray-900 dark:text-white mb-4">By the numbers</h4>
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      { value: '50K+', label: 'Users Served' },
-                      { value: '20+', label: 'Projects Built' },
-                      { value: '5+', label: 'Years XP' },
-                      { value: '99.9%', label: 'Uptime SLA' },
+                      { value: '3+', label: 'Years Sales XP' },
+                      { value: '2027', label: 'Graduation' },
+                      { value: '3', label: 'Roles Held' },
+                      { value: '2', label: 'Universities' },
                     ].map(stat => (
                       <div key={stat.label} className="text-center py-3 rounded-md bg-white/[0.03] border border-white/5">
                         <div className="font-heading font-bold text-2xl gradient-text">{stat.value}</div>

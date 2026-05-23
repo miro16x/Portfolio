@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { HiArrowRight, HiDownload } from 'react-icons/hi'
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiLinkedin } from 'react-icons/fi'
+import { FaHandshake } from 'react-icons/fa'
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FiGithub, href: 'https://github.com/miro16x', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/amir-salem-b91365381', label: 'LinkedIn' },
+  { icon: FaHandshake, href: 'https://app.joinhandshake.com/profiles/a5grz3', label: 'Handshake' },
 ]
 
 const containerVariants = {
@@ -73,13 +74,13 @@ export default function Hero() {
           >
             <TypeAnimation
               sequence={[
-                'Full-Stack Developer',
+                'CS Student @ Gannon University',
                 2000,
-                'UI/UX Designer',
+                'Web Developer & Designer',
                 2000,
-                'Open Source Contributor',
+                'Sales & Communications Leader',
                 2000,
-                'Problem Solver',
+                'Digital Content Creator',
                 2000,
               ]}
               repeat={Infinity}
@@ -92,8 +93,9 @@ export default function Hero() {
             variants={itemVariants}
             className="text-muted text-lg leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0"
           >
-            I craft high-performance web applications with clean code and thoughtful design.
-            Passionate about turning complex problems into elegant, intuitive solutions.
+            Driven Computer Science student with a background in web development, sales management,
+            and digital content creation. Passionate about building impactful digital experiences
+            and leading teams to success.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -180,10 +182,10 @@ export default function Hero() {
               animate={{ x: [0, 4, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <span className="text-lg">⚡</span>
+              <span className="text-lg">💼</span>
               <div>
-                <div className="text-xs font-semibold text-gray-900 dark:text-white">5+ Years</div>
-                <div className="text-xs text-muted">Experience</div>
+                <div className="text-xs font-semibold text-gray-900 dark:text-white">3+ Years</div>
+                <div className="text-xs text-muted">Leadership</div>
               </div>
             </motion.div>
 
@@ -192,10 +194,10 @@ export default function Hero() {
               animate={{ x: [0, -4, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <span className="text-lg">🚀</span>
+              <span className="text-lg">🎓</span>
               <div>
-                <div className="text-xs font-semibold text-gray-900 dark:text-white">20+ Projects</div>
-                <div className="text-xs text-muted">Shipped</div>
+                <div className="text-xs font-semibold text-gray-900 dark:text-white">CS @ Gannon</div>
+                <div className="text-xs text-muted">Class of 2027</div>
               </div>
             </motion.div>
           </motion.div>

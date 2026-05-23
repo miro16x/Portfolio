@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiHeart } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiHeart } from 'react-icons/fi'
+import { FaHandshake } from 'react-icons/fa'
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
@@ -10,9 +11,9 @@ const quickLinks = [
 ]
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FiGithub, href: 'https://github.com/miro16x', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/amir-salem-b91365381', label: 'LinkedIn' },
+  { icon: FaHandshake, href: 'https://app.joinhandshake.com/profiles/a5grz3', label: 'Handshake' },
 ]
 
 export default function Footer() {
@@ -31,7 +32,7 @@ export default function Footer() {
           <div>
             <div className="font-heading font-bold text-xl gradient-text mb-3">&lt;Amir /&gt;</div>
             <p className="text-slate-600 dark:text-muted text-sm leading-relaxed max-w-xs">
-              Full-Stack Developer crafting high-performance digital experiences with precision and passion.
+              CS Student & Web Developer crafting digital experiences with precision, leadership, and passion.
             </p>
           </div>
 
@@ -72,10 +73,10 @@ export default function Footer() {
               ))}
             </div>
             <a
-              href="mailto:amirsslem679@gmail.com"
+              href="mailto:salem009@gannon.edu"
               className="text-muted hover:text-primary text-sm transition-colors"
             >
-              amirsslem679@gmail.com
+              salem009@gannon.edu
             </a>
           </div>
         </div>
