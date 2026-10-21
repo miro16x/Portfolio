@@ -4,6 +4,9 @@ import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiSend } from 'react-icons/fi'
 import { FaHandshake } from 'react-icons/fa'
 
+// Web3Forms access keys are public by design; messages go to salem009@gannon.edu
+const WEB3FORMS_KEY = '6119d945-9d7d-4932-9f81-061dba2557ba'
+
 const contactInfo = [
   { icon: FiMail, label: 'Email', value: 'salem009@gannon.edu', href: 'mailto:salem009@gannon.edu' },
   { icon: FiMapPin, label: 'Location', value: 'Erie, PA', href: null },
@@ -40,12 +43,27 @@ export default function Contact() {
     setLoading(true)
     setStatus(null)
 
-    // Simulate form submission — replace with EmailJS or API call
-    await new Promise(r => setTimeout(r, 1500))
-
-    setLoading(false)
-    setStatus('success')
-    setForm({ name: '', email: '', subject: '', message: '' })
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          from_name: 'Portfolio Contact Form',
+          ...form,
+          subject: `Portfolio: ${form.subject}`,
+          replyto: form.email,
+        }),
+      })
+      const data = await res.json()
+      if (!data.success) throw new Error(data.message)
+      setStatus('success')
+      setForm({ name: '', email: '', subject: '', message: '' })
+    } catch {
+      setStatus('error')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -185,6 +203,15 @@ export default function Contact() {
                     className="p-3 rounded-md bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-code"
                   >
                     ✅ Message sent! I'll get back to you within 24 hours.
+                  </motion.div>
+                )}
+                {status === 'error' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="p-3 rounded-md bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-code"
+                  >
+                    Something went wrong. Please email me directly at salem009@gannon.edu.
                   </motion.div>
                 )}
 
