@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiSend } from 'react-icons/fi'
 import { FaHandshake } from 'react-icons/fa'
 
-// Web3Forms access keys are public by design; messages go to salem009@gannon.edu
+// Web3Forms access keys are public by design; messages go to amirsslem679@gmail.com
 const WEB3FORMS_KEY = '6119d945-9d7d-4932-9f81-061dba2557ba'
 
 const contactInfo = [
-  { icon: FiMail, label: 'Email', value: 'salem009@gannon.edu', href: 'mailto:salem009@gannon.edu' },
+  { icon: FiMail, label: 'Email', value: 'amirsslem679@gmail.com', href: 'mailto:amirsslem679@gmail.com' },
   { icon: FiMapPin, label: 'Location', value: 'Erie, PA', href: null },
 ]
 
@@ -211,7 +211,7 @@ export default function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     className="p-3 rounded-md bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-code"
                   >
-                    Something went wrong. Please email me directly at salem009@gannon.edu.
+                    Something went wrong. Please email me directly at amirsslem679@gmail.com.
                   </motion.div>
                 )}
 

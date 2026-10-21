@@ -63,7 +63,7 @@ export default function Resume() {
               <h3 className="font-heading font-bold text-2xl text-gray-900 dark:text-white mb-1">Amir Salem</h3>
               <p className="text-primary font-code">CS Student & Web Developer | Erie, PA</p>
               <div className="flex flex-wrap justify-center gap-4 mt-3 text-muted text-sm">
-                <span>salem009@gannon.edu</span>
+                <span>amirsslem679@gmail.com</span>
                 <a href="https://github.com/miro16x" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">github.com/miro16x</a>
                 <a href="https://www.linkedin.com/in/amir-salem-b91365381" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">linkedin.com/in/amir-salem</a>
                 <a href="https://app.joinhandshake.com/profiles/a5grz3" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Handshake Profile</a>
